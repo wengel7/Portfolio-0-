@@ -13,6 +13,11 @@ html{
 a{
     text-decoration: none;
 }
+.snap{
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
 .container{
     min-height: 100vh;
     width: 100%;
@@ -61,10 +66,10 @@ img{
     min-height: 8vh;
     background-color: #2B352F;
     transition: .3s ease background-color;
-}/*
+}
 #header .brand{
     font-size: 4rem;
-}*/
+}
 #header .nav-bar{
     display: flex;
     align-items: center;
@@ -462,7 +467,7 @@ animation-delay: 1.5s;
     font-size: 2rem;
 }
 #about .col-left .about-img img{
-    border-radius: 20px;
+    border-radius: 12px;
 }
 #about .col-left .about-img{
     height: 100%;
@@ -471,7 +476,7 @@ animation-delay: 1.5s;
     border: 10px solid #2b3335;
 }
 #about .col-left .about-img::after{
-    content: '';
+    /* content: '';
     position: absolute;
     left: -33px;
     top:19px ;
@@ -479,7 +484,7 @@ animation-delay: 1.5s;
     height: 98%;
     width: 98%;
     border: 7px solid #1ABA64;
-    z-index: -1;
+    z-index: -1; */
 }
 /*end about*/
 /*contact section*/
@@ -527,12 +532,7 @@ animation-delay: 1.5s;
     border-radius: 50%;
     color: white;
     font-size: 20px;
-}/*
-#contact .icons{
-    width: 30px;
-    height: 35px;
-   
-}*/
+}
 #contact .icon:hover{
     display: flex;
     align-items: center;
